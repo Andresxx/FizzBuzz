@@ -1,3 +1,11 @@
+
+
+exports.multipleOfthree = function(number){
+  if(number % 3 == 0)
+    return true;
+  return false;
+}
+
 function fizzbuzz () {
   for(i = 0; i < 100; i++) 
   {
