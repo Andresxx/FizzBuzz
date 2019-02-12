@@ -1,12 +1,12 @@
 
 
-exports.multipleOfThree = function(number){
+multipleOfThree = function(number){
   if(number % 3 == 0)
     return true;
   return false;
 }
 
-exports.multipleOfFive = function(number){
+multipleOfFive = function (number){
   if(number % 5 == 0)
     return true;
   return false;
