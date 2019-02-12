@@ -29,3 +29,15 @@ describe('Pruebas para multiplo de 5', function(){
         expect(multipleOfFive(11)).equal(false);
     });
 })
+
+
+describe('Pruebas para multiplo de 5 y 3', function(){
+
+    it('Deberia retornar verdadero dado 15 ', function(){
+        expect(multipleOfFiveAndThree(15)).equal(true);
+    });
+
+    it('Deberia retornar falso dado 11 ', function(){
+        expect(multipleOfFiveAndThree(11)).equal(false);
+    });
+})

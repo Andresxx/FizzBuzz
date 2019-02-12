@@ -12,6 +12,11 @@ multipleOfFive = function (number){
   return false;
 }
 
+multipleOfFiveAndThree = function (number){
+  if(multipleOfFive(number) && multipleOfThree(number))
+    return true;
+  return false;
+}
 function fizzbuzz () {
   for(i = 0; i < 100; i++) 
   {
