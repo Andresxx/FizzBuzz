@@ -1,4 +1,5 @@
 
+const  MAX_RANGE = 100;
 
 multipleOfThree = function(number){
   if(number % 3 == 0)
@@ -18,25 +19,22 @@ multipleOfFiveAndThree = function (number){
   return false;
 }
 function fizzbuzz () {
-  for(i = 0; i < 100; i++) 
+  let textToPrint;
+  for(let number = 0; number < MAX_RANGE; number++) 
   {
-      if (i % 3 === 0 && i % 5 === 0)
-      {
-        console.log("FizzBuzz");                    
-      }
-      else 
-        if(i % 3 === 0)
-        {
-          console.log("Fizz");
-        }
-        else 
-          if(i % 5 === 0)
-          {
-            console.log("Buzz");
-          }
-          else
-            console.log(i);
+
+    textToPrint = number;
+    if (multipleOfFiveAndThree(number))
+      textToPrint = "FizzBuzz";
+    else {
+      if(multipleOfThree(number))
+        textToPrint = "Fizz";
+      if(multipleOfFive(number))
+        textToPrint = "Buzz";
+    }
+    console.log(textToPrint);
   }
+
 }
 
 fizzbuzz()
